@@ -7,10 +7,10 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="b34f" class="javax.swing.JLabel">
+      <component id="7dfd7" class="javax.swing.JButton" binding="addCarButton" default-binding="true">
         <constraints border-constraint="Center"/>
         <properties>
-          <text value="Shuki1"/>
+          <text value=""/>
         </properties>
       </component>
     </children>
