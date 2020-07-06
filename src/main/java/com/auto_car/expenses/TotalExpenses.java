@@ -4,6 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TotalExpenses{
+
+    private TotalExpenses(){}
+    private volatile static TotalExpenses instance;
+    private static final Object lock = new Object();
+
+    public static TotalExpenses getInstance(){
+        if(instance == null){
+            synchronized (lock){
+                if(instance == null){
+                    instance = new TotalExpenses();
+                }
+            }
+        }
+        return instance;
+    }
+
     private final List<Expense> expenseList = new ArrayList<>();
 
     public double getTotalExpenses(){

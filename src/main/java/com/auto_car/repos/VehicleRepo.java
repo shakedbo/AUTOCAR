@@ -7,6 +7,21 @@ import java.util.List;
 
 public class VehicleRepo {
 
+    private VehicleRepo(){}
+    private volatile static VehicleRepo instance;
+    private static final Object lock = new Object();
+
+    public static VehicleRepo getInstance(){
+        if(instance == null){
+            synchronized (lock){
+                if(instance == null){
+                    instance = new VehicleRepo();
+                }
+            }
+        }
+        return instance;
+    }
+
     private final List<Vehicle> vehicles = new ArrayList<>();
 
     public List<Vehicle> getVehicles() {

@@ -7,6 +7,22 @@ import java.util.List;
 
 public class DriversRepo {
 
+    private DriversRepo(){}
+    private volatile static DriversRepo instance;
+    private static final Object lock = new Object();
+
+    public static DriversRepo getInstance(){
+        if(instance == null){
+            synchronized (lock){
+                if(instance == null){
+                    instance = new DriversRepo();
+                }
+            }
+        }
+        return instance;
+    }
+
+
     private final List<Driver> drivers = new ArrayList<>();
 
     public List<Driver> getDrivers() {
