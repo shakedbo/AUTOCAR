@@ -13,7 +13,6 @@ public class Driver
     private String licenseType;
     private Date licenseExpiredDate;
     private int drivingExperience;
-    private int dailyMileage;
 
     public String getLastName() {
         return lastName;
@@ -69,13 +68,5 @@ public class Driver
 
     public void setDrivingExperience(int drivingExperience) {
         this.drivingExperience = drivingExperience;
-    }
-
-    public int getDailyMileage() {
-        return dailyMileage;
-    }
-
-    public void setDailyMileage(int dailyMileage) {
-        this.dailyMileage = dailyMileage;
     }
 }

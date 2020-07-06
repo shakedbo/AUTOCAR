@@ -8,7 +8,6 @@ public abstract class Vehicle {
     private Date dateOfTest;
     private VehicleExpenses vehicleExpenses;
     private Color color;
-    private int mileage;
     private String manufacture;  //carModel
     private Date onRoadDate;  //YearCar
 
@@ -36,7 +35,7 @@ public abstract class Vehicle {
     }
 
     public void setVehicleExpenses(VehicleExpenses vehicleExpenses) {
-        vehicleExpenses = vehicleExpenses;
+        this.vehicleExpenses = vehicleExpenses;
     }
 
     public Color getColor() {
@@ -45,14 +44,6 @@ public abstract class Vehicle {
 
     public void setColor(Color color) {
         this.color = color;
-    }
-
-    public int getMileage() {
-        return mileage;
-    }
-
-    public void setMileage(int mileage) {
-        this.mileage = mileage;
     }
 
     public String getManufacture() {
