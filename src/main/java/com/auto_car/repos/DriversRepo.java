@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class DriverRepo {
+public class DriversRepo {
 
     private final List<Driver> drivers = new ArrayList<>();
 
