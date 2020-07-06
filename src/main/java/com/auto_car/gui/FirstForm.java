@@ -25,7 +25,6 @@ public class FirstForm {
         panel1 = new JPanel();
         panel1.setLayout(new BorderLayout(0, 0));
         final JLabel label1 = new JLabel();
-        label1.setText("Shuki1");
         panel1.add(label1, BorderLayout.CENTER);
     }
 
