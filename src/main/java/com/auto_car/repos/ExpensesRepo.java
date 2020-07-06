@@ -1,19 +1,21 @@
-package com.auto_car.expenses;
+package com.auto_car.repos;
+
+import com.auto_car.expenses.Expense;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TotalExpenses{
+public class ExpensesRepo {
 
-    private TotalExpenses(){}
-    private volatile static TotalExpenses instance;
+    private ExpensesRepo(){}
+    private volatile static ExpensesRepo instance;
     private static final Object lock = new Object();
 
-    public static TotalExpenses getInstance(){
+    public static ExpensesRepo getInstance(){
         if(instance == null){
             synchronized (lock){
                 if(instance == null){
-                    instance = new TotalExpenses();
+                    instance = new ExpensesRepo();
                 }
             }
         }
