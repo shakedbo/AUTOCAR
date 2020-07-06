@@ -1,4 +1,4 @@
-package drivers;
+package com.auto_car.model;
 
 import java.util.Date;
 

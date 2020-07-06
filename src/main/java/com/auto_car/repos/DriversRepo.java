@@ -1,6 +1,6 @@
 package com.auto_car.repos;
 
-import drivers.Driver;
+import com.auto_car.model.Driver;
 
 import java.util.ArrayList;
 import java.util.List;
