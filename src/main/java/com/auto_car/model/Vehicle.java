@@ -6,7 +6,7 @@ import java.util.Date;
 public abstract class Vehicle {
     private String licensePlate;
     private Date dateOfTest;
-    private TotalExpenses totalExpenses;
+    private VehicleExpenses vehicleExpenses;
     private Color color;
     private int mileage;
     private String manufacture;  //carModel
@@ -31,12 +31,12 @@ public abstract class Vehicle {
         this.dateOfTest = dateOfTest;
     }
 
-    public TotalExpenses getTotalExpenses() {
-        return totalExpenses;
+    public VehicleExpenses getVehicleExpenses() {
+        return vehicleExpenses;
     }
 
-    public void setTotalExpenses(TotalExpenses totalExpenses) {
-        totalExpenses = totalExpenses;
+    public void setVehicleExpenses(VehicleExpenses vehicleExpenses) {
+        vehicleExpenses = vehicleExpenses;
     }
 
     public Color getColor() {
