@@ -4,7 +4,6 @@ import com.auto_car.model.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class VehicleRepo {
 
@@ -16,7 +15,7 @@ public class VehicleRepo {
 
     public void addVehicle(Vehicle vehicle) {
         for (Vehicle current : this.vehicles) {
-            if (vehicle.getCarID().equals(current.getCarID())) {
+            if (vehicle.getLicensePlate().equals(current.getLicensePlate())) {
                 return;
             }
         }
@@ -24,9 +23,9 @@ public class VehicleRepo {
         this.vehicles.add(vehicle);
     }
 
-    public void removeVehicle(String carIdToRemove){
+    public void removeVehicle(String licensePlateToRemove){
         for (Vehicle current : this.vehicles) {
-            if (carIdToRemove.equals(current.getCarID())) {
+            if (licensePlateToRemove.equals(current.getLicensePlate())) {
                 this.vehicles.remove(current);
                 break;
             }
@@ -35,7 +34,7 @@ public class VehicleRepo {
 
     public Vehicle getVehicleById(String carId){
         for (Vehicle vehicle : this.vehicles) {
-            if (vehicle.getCarID().equals(carId)) {
+            if (vehicle.getLicensePlate().equals(carId)) {
                 return vehicle;
             }
         }

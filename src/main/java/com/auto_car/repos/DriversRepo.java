@@ -1,9 +1,9 @@
 package com.auto_car.repos;
-import com.auto_car.model.Vehicle;
+
 import drivers.Driver;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class DriversRepo {
 
@@ -23,7 +23,7 @@ public class DriversRepo {
         this.drivers.add(driver);
     }
 
-    public void removeVehicle(String driverIdToRemove) {
+    public void removeDriver(String driverIdToRemove) {
         for (Driver current : this.drivers) {
             if (driverIdToRemove.equals(current.getId())) {
                 this.drivers.remove(current);
@@ -39,6 +39,5 @@ public class DriversRepo {
             }
         }
         return null;
-
     }
 }

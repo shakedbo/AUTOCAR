@@ -4,23 +4,23 @@ import java.awt.*;
 import java.util.Date;
 
 public abstract class Vehicle {
-    private String carID;
+    private String licensePlate;
     private Date dateOfTest;
     private TotalExpenses totalExpenses;
     private Color color;
-    private int maileage;
+    private int mileage;
     private String manufacture;  //carModel
     private Date onRoadDate;  //YearCar
 
     public abstract LicenseType getLicenceType();
 
 
-    public String getCarID() {
-        return carID;
+    public String getLicensePlate() {
+        return licensePlate;
     }
 
-    public void setCarID(String carID) {
-        this.carID = carID;
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
     }
 
     public Date getDateOfTest() {
@@ -47,12 +47,12 @@ public abstract class Vehicle {
         this.color = color;
     }
 
-    public int getMaileage() {
-        return maileage;
+    public int getMileage() {
+        return mileage;
     }
 
-    public void setMaileage(int maileage) {
-        this.maileage = maileage;
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
     }
 
     public String getManufacture() {
