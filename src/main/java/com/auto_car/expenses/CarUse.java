@@ -1,10 +1,15 @@
 package com.auto_car.expenses;
 
-public class CarUse implements Expense {
+import java.util.Date;
+
+public class CarUse extends ExpenseBase {
+
+    protected CarUse(Date date) {
+        super(date);
+    }
 
     @Override
     public double calculatePrice() {
         return 0;
     }
-
 }
