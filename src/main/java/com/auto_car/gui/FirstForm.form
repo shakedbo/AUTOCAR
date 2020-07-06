@@ -7,12 +7,29 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="7dfd7" class="javax.swing.JButton" binding="addCarButton" default-binding="true">
+      <tabbedpane id="70de7" binding="tabbedPane1" default-binding="true">
         <constraints border-constraint="Center"/>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="27318" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Drivers"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="90282" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Untitled"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </tabbedpane>
     </children>
   </grid>
 </form>
