@@ -2,6 +2,7 @@ package drivers;
 
 import java.util.Date;
 
+@SuppressWarnings("unused")
 public class Driver
 {
 
@@ -12,24 +13,7 @@ public class Driver
     private String licenseType;
     private Date licenseExpiredDate;
     private int drivingExperience;
-    private int dayliMileage;
-
-
-    public void SetDayliMileage (){};
-
-    public void GetdDayliMileage(){return ;};
-
-    public void SetDayliFuel (){};
-
-    public void SetParkingReports(){};
-
-    public void SetDrivingReporrts(){};
-
-    public void GetDayliFuel (){};
-
-    public void GetParkingReports(){};
-
-    public void GetDrivingReporrts(){};
+    private int dailyMileage;
 
     public String getLastName() {
         return lastName;
@@ -84,14 +68,14 @@ public class Driver
     }
 
     public void setDrivingExperience(int drivingExperience) {
-        drivingExperience = drivingExperience;
+        this.drivingExperience = drivingExperience;
     }
 
-    public int getDayliMileage() {
-        return dayliMileage;
+    public int getDailyMileage() {
+        return dailyMileage;
     }
 
-    public void setDayliMileage(int dayliMileage) {
-        this.dayliMileage = dayliMileage;
+    public void setDailyMileage(int dailyMileage) {
+        this.dailyMileage = dailyMileage;
     }
 }
