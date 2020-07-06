@@ -2,7 +2,6 @@ package com.auto_car.model;
 
 import java.util.Date;
 
-@SuppressWarnings("unused")
 public class Driver
 {
 
@@ -10,7 +9,7 @@ public class Driver
     private String lastName;
     private String id;
     private int licenseNumber;
-    private String licenseType;
+    private LicenseType licenseType;
     private Date licenseExpiredDate;
     private int drivingExperience;
 
@@ -46,11 +45,11 @@ public class Driver
         this.licenseNumber = licenseNumber;
     }
 
-    public String getLicenseType() {
+    public LicenseType getLicenseType() {
         return licenseType;
     }
 
-    public void setLicenseType(String licenseType) {
+    public void setLicenseType(LicenseType licenseType) {
         this.licenseType = licenseType;
     }
 

@@ -13,7 +13,6 @@ public abstract class Vehicle {
 
     public abstract LicenseType getLicenceType();
 
-
     public String getLicensePlate() {
         return licensePlate;
     }
