@@ -9,4 +9,9 @@ public class GarageVisit implements Expense {
     public double calculatePrice() {
         return price;
     }
+
+    @Override
+    public String getLicensePlate() {
+        return licensePlate;
+    }
 }
