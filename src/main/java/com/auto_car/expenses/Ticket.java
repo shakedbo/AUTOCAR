@@ -5,18 +5,15 @@ import java.util.Date;
 public class Ticket extends ExpenseBase {
 
     private Date date;
+    private final double fee;
 
-    public Ticket(Date date){
+    public Ticket(Date date,double fee){
         super(date);
+        this.fee = fee;
     }
 
     @Override
     public double calculatePrice() {
-        return 0;
-    }
-
-    @Override
-    public Date getDate() {
-        return this.date;
+        return this.fee;
     }
 }
