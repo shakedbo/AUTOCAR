@@ -61,6 +61,11 @@ public class User
     private  String email;
     private  String password;
 
+    public static UserBuilder builder() {
+      return UserBuilder
+    }
+}
+
 public void addVehicle()
 {
 

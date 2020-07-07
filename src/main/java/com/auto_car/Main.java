@@ -30,5 +30,8 @@ public class Main {
                 createAndShowGUI();
             }
         });
+
+        User user=User.builder()
+
     }
 }
