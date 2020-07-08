@@ -14,12 +14,12 @@
         <children>
           <grid id="90282" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints>
-              <tabbedpane title="Vehicles"/>
+              <tabbedpane title="Drivers"/>
             </constraints>
             <properties/>
             <border type="none"/>
             <children>
-              <component id="dff0" class="javax.swing.JTable" binding="table1" default-binding="true">
+              <component id="605ec" class="javax.swing.JTable" binding="table1" default-binding="true">
                 <constraints border-constraint="Center"/>
                 <properties/>
               </component>
