@@ -18,7 +18,12 @@
             </constraints>
             <properties/>
             <border type="none"/>
-            <children/>
+            <children>
+              <component id="dff0" class="javax.swing.JTable" binding="table1" default-binding="true">
+                <constraints border-constraint="Center"/>
+                <properties/>
+              </component>
+            </children>
           </grid>
         </children>
       </tabbedpane>
