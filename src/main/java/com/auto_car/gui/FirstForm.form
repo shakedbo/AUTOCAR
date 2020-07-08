@@ -7,26 +7,48 @@
     <properties/>
     <border type="none"/>
     <children>
-      <tabbedpane id="70de7" binding="tabbedPane1" default-binding="true">
-        <constraints border-constraint="Center"/>
+      <scrollpane id="d4d9">
+        <constraints border-constraint="North"/>
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="90282" layout-manager="BorderLayout" hgap="0" vgap="0">
-            <constraints>
-              <tabbedpane title="Drivers"/>
-            </constraints>
+          <tabbedpane id="70de7" binding="tabbedPane1" default-binding="true">
+            <constraints/>
             <properties/>
             <border type="none"/>
             <children>
-              <component id="605ec" class="javax.swing.JTable" binding="table1" default-binding="true">
-                <constraints border-constraint="Center"/>
+              <grid id="90282" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Vehicles"/>
+                </constraints>
                 <properties/>
-              </component>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="ad307" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Drivers"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="5dbee">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="605ec" class="javax.swing.JTable" binding="table1" default-binding="true">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
             </children>
-          </grid>
+          </tabbedpane>
         </children>
-      </tabbedpane>
+      </scrollpane>
     </children>
   </grid>
 </form>

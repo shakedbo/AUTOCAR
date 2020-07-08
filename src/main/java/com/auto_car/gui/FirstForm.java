@@ -15,7 +15,6 @@ public class FirstForm {
     private JTable table1;
 
     public FirstForm() {
-        panel1.add(new JScrollPane(tabbedPane1));
         setData(DriversRepo.getInstance());
     }
 
@@ -36,13 +35,20 @@ public class FirstForm {
     private void $$$setupUI$$$() {
         panel1 = new JPanel();
         panel1.setLayout(new BorderLayout(0, 0));
+        final JScrollPane scrollPane1 = new JScrollPane();
+        panel1.add(scrollPane1, BorderLayout.NORTH);
         tabbedPane1 = new JTabbedPane();
-        panel1.add(tabbedPane1, BorderLayout.CENTER);
+        scrollPane1.setViewportView(tabbedPane1);
         final JPanel panel2 = new JPanel();
         panel2.setLayout(new BorderLayout(0, 0));
-        tabbedPane1.addTab("Drivers", panel2);
+        tabbedPane1.addTab("Vehicles", panel2);
+        final JPanel panel3 = new JPanel();
+        panel3.setLayout(new BorderLayout(0, 0));
+        tabbedPane1.addTab("Drivers", panel3);
+        final JScrollPane scrollPane2 = new JScrollPane();
+        panel3.add(scrollPane2, BorderLayout.CENTER);
         table1 = new JTable();
-        panel2.add(table1, BorderLayout.CENTER);
+        scrollPane2.setViewportView(table1);
     }
 
     /**
@@ -67,10 +73,4 @@ public class FirstForm {
 
     }
 
-    public void getData(DriversRepo data) {
-    }
-
-    public boolean isModified(DriversRepo data) {
-        return false;
-    }
 }
