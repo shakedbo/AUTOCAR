@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Unnamed" type="JarApplication" nameIsGenerated="true">
+  <configuration default="false" name="AutoCar-run" type="JarApplication">
     <option name="JAR_PATH" value="$PROJECT_DIR$/target/AUTOCAR-1.0-SNAPSHOT.jar" />
     <option name="WORKING_DIRECTORY" value="C:\Users\shake\AutoCar\AUTOCAR" />
     <option name="ALTERNATIVE_JRE_PATH" />
