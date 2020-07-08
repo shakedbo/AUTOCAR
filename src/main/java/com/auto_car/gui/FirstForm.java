@@ -15,6 +15,7 @@ public class FirstForm {
     private JTable table1;
 
     public FirstForm() {
+        panel1.add(new JScrollPane(tabbedPane1));
         setData(DriversRepo.getInstance());
     }
 
@@ -51,16 +52,19 @@ public class FirstForm {
         return panel1;
     }
 
+
+    ////////////////////////
     public void setData(DriversRepo data) {
 
         DefaultTableModel defaultTableModel = new DefaultTableModel();
         defaultTableModel.addColumn("First Name");
         defaultTableModel.addColumn("Last Name");
+        defaultTableModel.addColumn("Id");
         for (Driver driver : data.getDrivers()) {
-            defaultTableModel.addRow(Arrays.asList(driver.getFirstName(), driver.getLastName()).toArray());
+            defaultTableModel.addRow(Arrays.asList(driver.getFirstName(), driver.getLastName(), driver.getId()).toArray());
         }
         table1.setModel(defaultTableModel);
-        panel1.add(new JScrollPane(table1));
+
     }
 
     public void getData(DriversRepo data) {
