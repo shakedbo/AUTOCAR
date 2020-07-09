@@ -7,12 +7,60 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="7dfd7" class="javax.swing.JButton" binding="addCarButton" default-binding="true">
-        <constraints border-constraint="Center"/>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
+      <scrollpane id="d4d9">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="70de7" binding="tabbedPane1" default-binding="true">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="90282" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Vehicles"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="2143c">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="db083" class="javax.swing.JTable" binding="VehiclesTable">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="ad307" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Drivers"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="5dbee">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="605ec" class="javax.swing.JTable" binding="DriversTable">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>

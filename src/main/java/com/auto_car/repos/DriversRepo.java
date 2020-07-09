@@ -1,11 +1,41 @@
 package com.auto_car.repos;
-import com.auto_car.model.Vehicle;
-import drivers.Driver;
+
+import com.auto_car.model.Driver;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
-public class DriverRepo {
+public class DriversRepo {
+
+    private DriversRepo(){
+
+        Driver driver = new Driver();
+        driver.setId("1234");
+        driver.setFirstName("shuki");
+        driver.setLastName("LOKO");
+
+        Driver driver1 = new Driver();
+        driver1.setId("12345");
+        driver1.setFirstName("shukikuki");
+        driver1.setLastName("LOKO");
+
+        addDriver(driver);
+        addDriver(driver1);
+    }
+    private volatile static DriversRepo instance;
+    private static final Object lock = new Object();
+
+    public static DriversRepo getInstance(){
+        if(instance == null){
+            synchronized (lock){
+                if(instance == null){
+                    instance = new DriversRepo();
+                }
+            }
+        }
+        return instance;
+    }
+
 
     private final List<Driver> drivers = new ArrayList<>();
 
@@ -23,7 +53,7 @@ public class DriverRepo {
         this.drivers.add(driver);
     }
 
-    public void removeVehicle(String driverIdToRemove) {
+    public void removeDriver(String driverIdToRemove) {
         for (Driver current : this.drivers) {
             if (driverIdToRemove.equals(current.getId())) {
                 this.drivers.remove(current);
@@ -39,6 +69,5 @@ public class DriverRepo {
             }
         }
         return null;
-
     }
 }

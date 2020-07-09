@@ -1,4 +1,4 @@
-package drivers;
+package com.auto_car.model;
 
 import java.util.Date;
 
@@ -9,27 +9,9 @@ public class Driver
     private String lastName;
     private String id;
     private int licenseNumber;
-    private String licenseType;
+    private LicenseType licenseType;
     private Date licenseExpiredDate;
     private int drivingExperience;
-    private int dayliMileage;
-
-
-    public void SetDayliMileage (){};
-
-    public void GetdDayliMileage(){return ;};
-
-    public void SetDayliFuel (){};
-
-    public void SetParkingReports(){};
-
-    public void SetDrivingReporrts(){};
-
-    public void GetDayliFuel (){};
-
-    public void GetParkingReports(){};
-
-    public void GetDrivingReporrts(){};
 
     public String getLastName() {
         return lastName;
@@ -63,11 +45,11 @@ public class Driver
         this.licenseNumber = licenseNumber;
     }
 
-    public String getLicenseType() {
+    public LicenseType getLicenseType() {
         return licenseType;
     }
 
-    public void setLicenseType(String licenseType) {
+    public void setLicenseType(LicenseType licenseType) {
         this.licenseType = licenseType;
     }
 
@@ -84,14 +66,6 @@ public class Driver
     }
 
     public void setDrivingExperience(int drivingExperience) {
-        drivingExperience = drivingExperience;
-    }
-
-    public int getDayliMileage() {
-        return dayliMileage;
-    }
-
-    public void setDayliMileage(int dayliMileage) {
-        this.dayliMileage = dayliMileage;
+        this.drivingExperience = drivingExperience;
     }
 }
