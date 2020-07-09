@@ -23,7 +23,19 @@
                 </constraints>
                 <properties/>
                 <border type="none"/>
-                <children/>
+                <children>
+                  <scrollpane id="2143c">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="db083" class="javax.swing.JTable" binding="VehiclesTable">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
               </grid>
               <grid id="ad307" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
