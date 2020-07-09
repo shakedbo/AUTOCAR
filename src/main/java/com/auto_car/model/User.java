@@ -1,9 +1,9 @@
-package com.auto_car;
+package com.auto_car.model;
 
-import com.auto_car.model.Vehicle;
+import com.auto_car.repos.UserBuilder;
+import com.auto_car.repos.VehicleRepo;
 
-public class User
-{
+public class User {
 
 
     public int getId() {
@@ -54,28 +54,23 @@ public class User
         this.password = password;
     }
 
-    private  int id ;
-    private  String fistName;
-    private  String lastName;
-    private  int phoneNumber;
-    private  String email;
-    private  String password;
+    private int id;
+    private String fistName;
+    private String lastName;
+    private int phoneNumber;
+    private String email;
+    private String password;
 
-    public static UserBuilder builder() {
-      return UserBuilder
+    public static UserBuilder builder(){
+        return builder();
     }
-}
-
-public void addVehicle()
-{
 
 
+    public void addVehicle(Vehicle vehicle) {
+        VehicleRepo.getInstance().addVehicle(vehicle);
+    }
 
-}
-
-public void addVehicle(Vehicle car)
-{
-
-
-
+    public void RemoveVehicle(Vehicle vehicle) {
+        VehicleRepo.getInstance().removeVehicle(vehicle.getLicensePlate());
+    }
 }
